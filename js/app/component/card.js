@@ -130,12 +130,7 @@ export const card = (() => {
      * @returns {string}
      */
     const renderButton = (c) => {
-        return `
-        <div class="d-flex justify-content-between align-items-center" id="button-${c.uuid}">
-            ${renderAction(c)}
-            ${c.comments.length > 0 ? renderReadMore(c.uuid, c.comments.map((i) => i.uuid)) : ''}
-            ${renderLike(c)}
-        </div>`;
+        return ``;
     };
 
     /**
