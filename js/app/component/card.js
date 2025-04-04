@@ -144,7 +144,7 @@ export const card = (() => {
      */
     const renderHeader = (c, is_parent) => {
         if (is_parent) {
-            return `class="bg-theme-auto shadow p-3 mx-0 mt-0 mb-3 rounded-4 hidden" data-parent="true"`;
+            return `class="bg-theme-auto shadow p-3 mx-0 mt-0 mb-3 rounded-4 hidden d-none" data-parent="true"`;
         }
 
         return `class="${!showHide.get('hidden').find((i) => i.uuid === c.uuid)['show'] ? 'd-none' : ' d-none !important'} overflow-x-scroll mw-100 border-start bg-theme-auto py-2 ps-2 pe-0 my-2 ms-2 me-0"`;
