@@ -681,6 +681,19 @@ export const comment = (() => {
         comments = document.getElementById('comments');
         comments.addEventListener('comment.show', show);
 
+                owns = storage('owns');
+        user = storage('user');
+        tracker = storage('tracker');
+        showHide = storage('comment');
+
+        if (!showHide.has('hidden')) {
+            showHide.set('hidden', []);
+        }
+
+        if (!showHide.has('show')) {
+            showHide.set('show', []);
+        }
+
 
     };
 
